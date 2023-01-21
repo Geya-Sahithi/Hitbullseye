@@ -1,0 +1,32 @@
+Describe higher order functions in javascript.
+Answer: Basically, a function which takes another
+function as an argument or returns a function is
+known as a higher order function. Let's deep dive
+a bit to see both types of implementation, that is: 
+Passing a function as an argument to another function. 
+Returning a function from another function.
+
+Use cases and code examples for map in javascript.
+
+Answer: Doubling the elements of an array.
+
+var map1 = new Map([   
+['first-name', "Ukpai"],['second-name', 'Hannah']
+]);
+console.log(map1.size)
+
+Use cases and code examples for filter in javascript
+Answer: Remove Invalid Values
+
+const x = [1, 2, 3, 4, 5];
+const y = x.filter(el => el*2 === 2);
+console.log("y is: ", y); // y is: [1]
+
+Use cases and code examples for reduce in javascript
+Answer: Remove duplicates in an array.
+
+const fruits = [ 'Banana', 'Orange', 'Apple', 'Orange', 'Pear', 'Banana']
+const occurrences = fruits.reduce((acc, currFruit) => {
+    return {...acc, [currFruit]: (acc[currFruit] || 0) + 1 }
+}, {})
+console.log(occurrences)
